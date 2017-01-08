@@ -1,0 +1,35 @@
+{
+  "ecmaVersion": 5,
+  "plugins": {
+    "guess-types": {
+      
+    },
+    "outline": {
+      
+    },
+    "node": {
+      
+    },
+    "requirejs": {
+      
+    },
+    "angular1": {
+      
+    },
+    "node-mongodb-native": {
+      
+    },
+    "node-mongoose": {
+      
+    },
+    "bootstrap": {
+      
+    }
+  },
+  "libs": [
+    "ecma5",
+    "browser",
+    "underscore",
+    "jquery"
+  ]
+}
