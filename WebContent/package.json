@@ -1,0 +1,17 @@
+{
+  "name": "finTrack",
+  "namelower": "finTrack",
+  "version": "0.0.1",
+  "description": "An example AngularJS project",
+  "readme": "README.md",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pkrajanand/FinTrack"
+  },  
+  "scripts": {
+    "postinstall": "bower install"
+  },
+  "config": {
+    "unsafe-perm":true
+  }
+}

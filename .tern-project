@@ -24,6 +24,9 @@
     },
     "bootstrap": {
       
+    },
+    "browser-extension": {
+      
     }
   },
   "libs": [

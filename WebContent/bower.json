@@ -1,0 +1,19 @@
+{
+  "name": "fintrack",
+  "version": "0.0.0",
+  "dependencies": {
+    "angular": "1.6.1",
+    "angular-route": "1.6.1",
+    "angular-sanitize": "1.6.1",
+    "jquery": "1.9.1",
+    "bootstrap": "4.0.0-alpha.6",
+    "tether": "1.2.4",
+    "angular-bootstrap": "2.4.0",
+    "underscore": "1.6.0",
+    "restangular": "1.4.0"
+  },
+  "analytics": false,
+  "resolutions": {
+    "tether": "^1.4.0"
+  }
+}

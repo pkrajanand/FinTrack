@@ -4,10 +4,32 @@
 		<meta charset="UTF-8">
 		<title>Expense Tracking</title>
 	
-		<link rel="stylesheet" href="bootstrap-4.0.0-alpha.6-dist/css/bootstrap.min.css">
-		<script src="bootstrap-4.0.0-alpha.6-dist/js/bootstrap.min.js"></script>
+		<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
+		<script src="/FinTrack/bower_components/jquery/jquery.min.js"></script>
+	    <script src="/FinTrack/bower_components/angular/angular.min.js"></script>
+	    <script src="/FinTrack/bower_components/tether/dist/js/tether.min.js"></script>	    
+	    <script src="/FinTrack/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+	    <script src="/FinTrack/bower_components/angular-bootstrap/ui-bootstrap.min.js"></script>
+	    <script src="/FinTrack/bower_components/angular-bootstrap/ui-bootstrap-tpls.min.js"></script>
+
 	</head>
 	<body>
+	
+		<div ng-include="'headerTable.htm'"></div>
+		
+		<uib-tabset active="active">
+  <uib-tab index="0" heading="Static title">Static content</uib-tab>
+  <uib-tab index="$index + 1" ng-repeat="tab in tabs" heading="{{tab.title}}" disable="tab.disabled">
+    {{tab.content}}
+  </uib-tab>
+  <uib-tab index="3" select="alertMe()">
+    <uib-tab-heading>
+      <i class="glyphicon glyphicon-bell"></i> Alert!
+    </uib-tab-heading>
+    I've got an HTML heading, and a select callback. Pretty cool!
+  </uib-tab>
+</uib-tabset>
+
 		<div class="text-center"><h1>Savings/Debt Analysis</h1><h2>2017</h2></div>
 		<table class="table">
 			<thead class="thead-inverse">
